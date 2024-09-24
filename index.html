@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals of India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        h2 {
+            color: orange;
+        }
+
+        #festival-info {
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        #festival-info img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #form-section {
+            margin-top: 30px;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        .link {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Festivals of India</h1>
+    <h3 style="text-align: center; color: green;">Explore the Rich Culture</h3>
+
+    <div id="festival-info">
+        <h2>Diwali: The Festival of Lights</h2>
+        <p>Diwali is celebrated by lighting lamps, decorating homes with rangoli, and enjoying sweets:</p>
+        <ul>
+            <li>Diyas (lamps)</li>
+            <li>Rangoli (floor art)</li>
+            <li>Sweets</li>
+        </ul>
+        <img src="Daco_4960582.png" alt="Diya Lamp">
+        <a class="link" href="Daco_4960582.png">Learn More About Diwali</a>
+        <div class="clear"></div>
+    </div>
+
+    <div id="form-section">
+        <h2>Share Your Favorite Festival</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="festival">Favorite Festival:</label>
+            <input type="radio" id="diwali" name="festival" value="Diwali">Diwali
+            <input type="radio" id="holi" name="festival" value="Holi">Holi
+            <input type="radio" id="other" name="festival" value="Other">Other<br>
+
+            <label for="date">Festival Date:</label>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="family-count">Number of Family Members Celebrating:</label>
+            <input type="number" id="family-count" name="family-count" min="1"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
